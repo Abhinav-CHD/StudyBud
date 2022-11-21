@@ -24,11 +24,12 @@ def loginPage(request):
     if request.method == 'POST':
         email = request.POST.get('email').lower()
         password = request.POST.get('password')
-
+        userExistFlag = True
         try:
             user = User.objects.get(email=email)
         except:
             messages.error(request, 'User does not exist')
+            userExistFlag = False
 
         user = authenticate(request, email=email, password=password)
 
@@ -36,7 +37,8 @@ def loginPage(request):
             login(request, user)
             return redirect('home')
         else:
-            messages.error(request, 'Password is incorrect')
+            if userExistFlag:
+                messages.error(request, 'Password is incorrect')
 
     context = {'page': page}
     return render(request, 'base/login_register.html', context)
