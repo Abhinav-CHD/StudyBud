@@ -33,8 +33,6 @@ StudyBud need following tech stack to work properly:
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
 It is recommmend that you create a virtual env.
 
 ```sh
