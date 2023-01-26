@@ -2,9 +2,7 @@
 ### _A community web app to find people with similar interests and bring them together_
 
 ## Preview
-Live - [Link](https://studybud-production.up.railway.app/)
- <br/>
-Backup (may take a while to load) - [Link](https://studybud-u3jj.onrender.com/)
+Live Link (may take a while to load) - [Link](https://studybud-u3jj.onrender.com/)
 
 ## Screenshots
 ![Screenshot (493)](https://user-images.githubusercontent.com/65783653/204759536-2f7377f1-3adb-4413-8a40-7f62dc2d1f5a.png)
